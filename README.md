@@ -6,6 +6,7 @@
 
 
 <div align='center'>                                                            
-***Download Expo Client app from PlayStore. [https://play.google.com/store/apps/details?id=host.exp.exponent](Download here.),***
+***Download Expo Client app from PlayStore(https://play.google.com/store/apps/details?id=host.exp.exponent)</b>*** <br>
 ***To run the project on your device wthout downloading the apk file scan the QR code provided here.
+
   </div>
