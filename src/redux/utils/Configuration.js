@@ -1,9 +1,8 @@
 import axios from "axios";
-import * as SecureStore from 'expo-secure-store';
+
 
 export const tokenConfig = async () => {
-  const userToken = await SecureStore.getItemAsync('STORAGE_TOKEN');
-
+  const userToken = null;
   if (userToken) {
     const headers = {
       'Content-Type': 'application/json',

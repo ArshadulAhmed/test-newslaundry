@@ -1,7 +1,7 @@
 import axios from "axios";
-import { tokenConfig } from "../../utils/Configuration";
-import { baseURL } from "../../utils/ApiRequestPaths";
-import { returnErrors } from "../../utils/messages";
+import { tokenConfig } from "../utils/Configuration";
+import { baseURL } from "../utils/ApiRequestPaths";
+import { returnErrors } from "../utils/messages";
 import {
   LOAD_NEWS_IN_START,
   LOAD_NEWS_IN_SUCCESS,
@@ -24,7 +24,7 @@ export const loadIndianPoliticsNews = () => (dispatch, getState) => {
       });
     })
     .catch(err => {
-      dispatch(returnErrors(err.response.data, err.response.status));
+      dispatch(returnErrors(err.response, err.response));
       dispatch({
         type: LOAD_NEWS_IN_FAIL
       });

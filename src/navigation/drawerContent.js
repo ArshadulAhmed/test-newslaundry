@@ -19,9 +19,6 @@ function DrawerContent({ navigation, ...props }) {
         inputRange: [0, 0.5, 0.7, 0.8, 1],
         outputRange: [-100, -85, -70, -45, 0],
     });
-
-    console.log('props.navigation', navigation);
-
     return (
         <DrawerContentScrollView {...props}>
             <Animated.View
