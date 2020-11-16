@@ -12,7 +12,7 @@ import {
 export const loadFinanceNews = () => (dispatch, getState) => {
     dispatch({ type: LOAD_FINANCE_IN_START });
     axios
-        .get(`${baseURL}/top-headlines?country=in&category=finance&apiKey=${apiKey}`, tokenConfig(getState))
+        .get(`${baseURL}/top-headlines?country=in&category=business&apiKey=${apiKey}`, tokenConfig(getState))
 
         .then(res => {
             dispatch({
