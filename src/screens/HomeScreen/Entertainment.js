@@ -4,7 +4,7 @@ import { Text } from 'react-native-paper';
 import { SafeAreaView, FlatList, View } from 'react-native';
 import { loadEntertainmentNews } from '../../redux/actions/loadEntairtaimentNews'
 import NewsCard from '../../components/NewsCard';
-
+import DefaultLoading from '../../components/DefaultLoading';
 
 
 
@@ -17,7 +17,7 @@ function Entertainment(props) {
     const { isLoading, articles } = props.entertainment_india_info;
     if (isLoading) {
         return (
-            <Text>Loading...</Text>
+            <DefaultLoading />
         )
     }
     const renderItem = ({ item }) => {

@@ -4,6 +4,7 @@ import { Text } from 'react-native-paper';
 import { SafeAreaView, FlatList, View } from 'react-native';
 import { loadFinanceNews } from '../../redux/actions/loadFinanceNews'
 import NewsCard from '../../components/NewsCard';
+import DefaultLoading from '../../components/DefaultLoading';
 
 
 
@@ -17,7 +18,7 @@ function Finance(props) {
     const { isLoading, articles } = props.finance_india_info;
     if (isLoading) {
         return (
-            <Text>Loading...</Text>
+            <DefaultLoading />
         )
     }
     const renderItem = ({ item }) => {

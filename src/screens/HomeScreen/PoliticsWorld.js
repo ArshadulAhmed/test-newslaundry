@@ -1,9 +1,11 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { Text } from 'react-native-paper';
-import { SafeAreaView, FlatList, View } from 'react-native';
-import { loadIndianPoliticsNews } from '../../redux/actions/loadIndianPoliticsNews'
+import { FlatList } from 'react-native';
+import { loadIndianPoliticsNews } from '../../redux/actions/loadIndianPoliticsNews';
+import { clearError } from '../../redux/utils/messages';
 import NewsCard from '../../components/NewsCard';
+import DefaultLoading from '../../components/DefaultLoading';
 
 
 
@@ -15,9 +17,10 @@ function PoliticsWorld(props) {
         props.loadIndianPoliticsNews();
     }, [])
     const { isLoading, articles } = props.politics_india_info;
+
     if (isLoading) {
         return (
-            <Text>Loading...</Text>
+            <DefaultLoading />
         )
     }
     const renderItem = ({ item }) => {
@@ -29,7 +32,6 @@ function PoliticsWorld(props) {
         );
     }
     return (
-
         <FlatList
             data={articles}
             ItemSeparatorComponent={false}
@@ -44,16 +46,17 @@ function PoliticsWorld(props) {
             getItemLayout={(data, index) => {
                 return { length: 40, offset: 40 * index, index }
             }}
+
         />
     )
 }
 function mapStateToProps(state) {
     return {
-        politics_india_info: state.politics_india
+        politics_india_info: state.politics_india,
     }
 }
 
 const mapDispatchToProps = {
-    loadIndianPoliticsNews
+    loadIndianPoliticsNews, clearError
 }
 export default connect(mapStateToProps, mapDispatchToProps)(PoliticsWorld);

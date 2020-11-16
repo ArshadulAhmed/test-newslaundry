@@ -5,6 +5,7 @@ import { SafeAreaView, FlatList, View } from 'react-native';
 import { loadIndianTopNews } from '../../redux/actions/loadIndianTopNews'
 import NewsCard from '../../components/NewsCard';
 
+import DefaultLoading from '../../components/DefaultLoading';
 
 
 
@@ -17,7 +18,7 @@ function TopHeadlines(props) {
     const { isLoading, articles } = props.politics_india_info;
     if (isLoading) {
         return (
-            <Text>Loading...</Text>
+            <DefaultLoading />
         )
     }
     const renderItem = ({ item }) => {
