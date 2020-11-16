@@ -1,4 +1,5 @@
 import React from 'react';
+import { StyleSheet } from 'react-native';
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 import TopHeadlines from '../screens/HomeScreen/TopHeadlines';
 import PoliticsWorld from '../screens/HomeScreen/PoliticsWorld';
@@ -21,8 +22,8 @@ function HomePageTopNavigation() {
         <Tab.Navigator
             initialRouteName='Technology'
             tabBarOptions={{
-                labelStyle: { fontSize: 12 },
-                style: { backgroundColor: 'powderblue' },
+                labelStyle: { fontSize: 12, fontFamily: 'montserrat-semiBold', color: 'red' },
+                style: { backgroundColor: '#ccc' },
                 scrollEnabled: true
             }}
 
@@ -46,3 +47,4 @@ function HomePageTopNavigation() {
     );
 }
 export default HomePageTopNavigation;
+
