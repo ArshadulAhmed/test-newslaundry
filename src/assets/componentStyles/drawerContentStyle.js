@@ -7,6 +7,7 @@ const drawerContentStyle = StyleSheet.create({
     },
     drawerTopSection: {
         flex: 1,
+        marginTop: -10
     },
     drawerMenuContent: {
         flex: 1,

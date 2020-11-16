@@ -29,22 +29,24 @@ function Technology(props) {
         );
     }
     return (
+        <SafeAreaView style={{ flex: 1, flexDirection: 'column' }}>
+            <FlatList
+                data={articles}
+                ItemSeparatorComponent={false}
+                horizontal={false}
+                numColumns={1}
+                renderItem={renderItem}
+                keyExtractor={(item, index) => item.title}
+                removeClippedSubviews={true}
+                initialNumToRender={3}
+                maxToRenderPerBatch={1}
+                maxToRenderPerBatch={100}
+                getItemLayout={(data, index) => {
+                    return { length: 40, offset: 40 * index, index }
+                }}
+            />
+        </SafeAreaView>
 
-        <FlatList
-            data={articles}
-            ItemSeparatorComponent={false}
-            horizontal={false}
-            numColumns={1}
-            renderItem={renderItem}
-            keyExtractor={(item, index) => item.title}
-            removeClippedSubviews={true}
-            initialNumToRender={3}
-            maxToRenderPerBatch={1}
-            maxToRenderPerBatch={100}
-            getItemLayout={(data, index) => {
-                return { length: 40, offset: 40 * index, index }
-            }}
-        />
     )
 }
 function mapStateToProps(state) {

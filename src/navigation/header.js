@@ -1,11 +1,12 @@
 import React from "react";
-import { View, StyleSheet } from 'react-native';
+import { View, StyleSheet, SafeAreaView } from 'react-native';
 import { Text, IconButton } from 'react-native-paper';
-// import CustomeBadge from '../components/CustomeBadge';
+
 
 function HeaderComponent(props) {
 
     return (
+
         <View style={{ ...styles.topMenuBar, }} elevation={5}>
             <View style={[styles.topMenuBarInner, styles.topMenuBarInnerLeft]}>
                 <View style={styles.topMenuLeftNav}>
@@ -14,14 +15,12 @@ function HeaderComponent(props) {
                             <IconButton
                                 icon="arrow-left"
                                 size={25}
-                                //color={colors.iconColors}
                                 onPress={props.navigation.goBack}
                             />
                             :
                             <IconButton
                                 icon="menu"
                                 size={25}
-                                //color={colors.iconColors}
                                 onPress={() => props.navigation.openDrawer()}
                             />
                     }
@@ -33,11 +32,12 @@ function HeaderComponent(props) {
                 <IconButton
                     size={22}
                     icon="magnify"
-                    //color={colors.iconColors}
                     onPress={() => props.navigation.navigate('Home')}
                 />
             </View>
         </View>
+
+
     );
 }
 
@@ -46,10 +46,9 @@ export default HeaderComponent;
 const styles = StyleSheet.create({
     topMenuBar: {
         flexDirection: 'row',
-        paddingTop: 20,
+        paddingTop: 0,
         justifyContent: 'space-around',
         backgroundColor: 'red',
-
     },
     topMenuBarInner: {
         flex: 1,

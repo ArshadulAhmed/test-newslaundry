@@ -64,6 +64,17 @@ function MenuItems({ props }) {
                 icon={() => { return <AvatarIcons size={30} name='cart-outline' style={drawerContentStyle.avatarStyle} /> }}
                 style={drawerContentStyle.drawerItems}
             />
+
+
+            <DrawerItems
+                label='NewsDetailScreen'
+                labelStyle={drawerContentStyle.labelStyle}
+                onPress={() => props.navigate('NewsDetailScreen')}
+                icon={() => { return <AvatarIcons size={30} name='cart-outline' style={drawerContentStyle.avatarStyle} /> }}
+                style={drawerContentStyle.drawerItems}
+            />
+
+
         </View>
     )
 }

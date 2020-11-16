@@ -25,6 +25,7 @@ function HomePageTopNavigation() {
                 style: { backgroundColor: 'powderblue' },
                 scrollEnabled: true
             }}
+
         // tabBarPosition='top'
         // animationEnabled={false}
         // lazy={true}
