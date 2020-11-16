@@ -16,7 +16,7 @@
 <div align='center'>
 <h4 align="center">Install node.js (v12.18.0)</h4>
   <h4 align="center">creare an account https://newsapi.org and copy the apiKey.</h4>
-  <h4 align="center">Open the project from your IDE and Open `src\redux\utils\ApiRequestPaths.js` and replace the apiKey with your api key.</h4>
+  <h4 align="center">Open the project from your IDE and Open `src\redux\utils\ApiRequestPaths.js` and replace the apiKey with your api apiKey.</h4>
   <h4 align="center">run <span style="color:green; font-weight:bold">npm i</span> from the project root directory (same directory as package.json file) and this will install all required dependencies mentioned in package.json file.</h4>
   <h4 align="center">run  <span style="color:green; font-weight:bold">expo start</span> and this will start the server and a QR code will be generated.</h4>
   <h4 align="center">scan the QR code from EXPO CLIENT app.</h4>
