@@ -11,7 +11,7 @@
 
   </div>
   
-  ### For data I have used [https://newsapi.org/](https://newsapi.org/) , which is free till 100 api request/24hr. If you have recived any error regarding the same, please clone the project and follow the bellow instructions to run the project locally.
+  ### For data I have used [https://newsapi.org/](https://newsapi.org/) , which is free till 100 api request/24hr. If you receive any error regarding the same, please clone the project and follow the bellow instructions to run the project locally.
   
 <div align='center'>
 <h4 align="center">Install node.js (v12.18.0)</h4>
