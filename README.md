@@ -1,4 +1,6 @@
 
+```html
+
 <div align='center'>
 <h1 align="center"> Instructions</h1>
 <br><br><br>
@@ -7,7 +9,7 @@
 
 <div align='center'>   
   
-***[Download Expo Client app from PlayStore](https://play.google.com/store/apps/details?id=host.exp.exponent)*** <br>
+***[Download Expo Client app from Google PlayStore](https://play.google.com/store/apps/details?id=host.exp.exponent)*** <br>
 ***To run the project on your device (without generating the apk file) scan the QR code by using EXPO CLient app. [get the QR Code here](https://play.google.com/store/apps/details?id=host.exp.exponent)*** <br>
 
   </div>
@@ -19,12 +21,12 @@
   <h4 align="center">creare an account [https://newsapi.org/](https://newsapi.org/) and copy the apiKey.</h4>
   <h4 align="center">Open the project from your IDE and Open `src\redux\utils\ApiRequestPaths.js` and replace the apiKey with your api key.</h4>
   <h4 align="center">run <b>npm i</b> from the project root directory (same directory as package.json file) and this will install all required dependencies mentioned in package.json file.</h4>
-  <h4 align="center">run  `expo start` and this will start the server and a QR code will be generated.</h4>
+  <h4 align="center">run  <b>expo start</b> and this will start the server and a QR code will be generated.</h4>
   <h4 align="center">scan the QR code from EXPO CLIENT app.</h4>
     <h4 align="center">THIS WILL RUN THE APP LOCALLY</h4>
 <br><br><br>
 </div>
-
+```
 
  
 
