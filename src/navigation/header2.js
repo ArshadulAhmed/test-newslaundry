@@ -1,7 +1,7 @@
 import React from "react";
 import { connect } from 'react-redux';
 import { View, StyleSheet, Keyboard, TextInput } from 'react-native';
-import { Text, IconButton, Snackbar, useTheme } from 'react-native-paper';
+import { Text, IconButton, Snackbar } from 'react-native-paper';
 import { getNewsSearchResult } from '../redux/actions/getNewsSearchResult';
 import { clearSearchHistory } from '../redux/actions/getNewsSearchResult';
 

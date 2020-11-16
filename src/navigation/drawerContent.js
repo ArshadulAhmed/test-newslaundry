@@ -4,7 +4,7 @@ import { View } from "react-native";
 import Animated from 'react-native-reanimated';
 import { Text, IconButton } from 'react-native-paper';
 import { drawerContentStyle } from '../assets/componentStyles/drawerContentStyle';
-import { DrawerItems, AvatarIcons, AvatarIconsSecondary } from '../components/common/DrawerReusableComponents';
+import { AvatarIconsSecondary } from '../components/common/DrawerReusableComponents';
 import ProfileSettingItems from '../components/ProfileSettingItems';
 import MenuItems from '../components/MenuItems';
 import Footer from '../components/Footer';

@@ -1,6 +1,3 @@
-import axios from "axios";
-
-
 export const tokenConfig = async () => {
   const userToken = null;
   if (userToken) {

@@ -1,6 +1,6 @@
 import React from 'react';
-import { View, Text, StyleSheet, Image, TouchableOpacity } from 'react-native';
-import { Card, Title, Paragraph, Button, Avatar } from 'react-native-paper';
+import { Text, StyleSheet, TouchableOpacity } from 'react-native';
+import { Card, Paragraph } from 'react-native-paper';
 
 function NewsCard(props) {
     return (

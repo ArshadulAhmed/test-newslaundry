@@ -1,4 +1,4 @@
-import { GET_ERRORS, REMOVE_EXISTING_ERRORS, CLEAR_ERROR } from "../../utils/types";
+import { GET_ERRORS, CLEAR_ERROR } from "../../utils/types";
 
 const initialState = {
     msg: {},

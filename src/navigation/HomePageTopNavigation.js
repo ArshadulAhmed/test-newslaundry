@@ -1,7 +1,5 @@
 import React from 'react';
-import { StyleSheet } from 'react-native';
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
-import TopHeadlines from '../screens/HomeScreen/TopHeadlines';
 import PoliticsWorld from '../screens/HomeScreen/PoliticsWorld';
 import Entertainment from '../screens/HomeScreen/Entertainment';
 import Sports from '../screens/HomeScreen/Sports';

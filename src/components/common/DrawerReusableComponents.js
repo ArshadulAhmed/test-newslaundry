@@ -1,7 +1,7 @@
 import React from "react";
 import propTypes from 'prop-types';
 import { DrawerItem } from "@react-navigation/drawer";
-import { Avatar, useTheme } from 'react-native-paper';
+import { Avatar } from 'react-native-paper';
 
 export const DrawerItems = ({ label, labelStyle, onPress, icon, style, activeTintColor, activeBackgroundColor, inactiveTintColor, inactiveBackgroundColor, ...rest }) => (
     <DrawerItem

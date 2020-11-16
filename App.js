@@ -5,7 +5,6 @@ import { AppearanceProvider } from "react-native-appearance";
 import store from "./src/redux/store/store";
 import AppNavigation from "./src/navigation/AppNavigation";
 import { SafeAreaProvider } from "react-native-safe-area-context";
-// App loading (for Font)
 import * as Font from "expo-font";
 import { AppLoading } from "expo";
 

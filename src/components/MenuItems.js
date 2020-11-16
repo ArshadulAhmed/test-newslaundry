@@ -1,7 +1,6 @@
 import React from 'react';
 import { View } from 'react-native';
-import { Text, IconButton } from 'react-native-paper';
-import { DrawerItems, AvatarIcons, AvatarIconsSecondary } from '../components/common/DrawerReusableComponents';
+import { DrawerItems, AvatarIcons } from '../components/common/DrawerReusableComponents';
 import { drawerContentStyle } from '../assets/componentStyles/drawerContentStyle';
 
 function MenuItems({ props }) {

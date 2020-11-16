@@ -1,6 +1,6 @@
 import React from "react";
 import propTypes from 'prop-types';
-import { TextInput, HelperText, Button } from 'react-native-paper';
+import { TextInput, HelperText } from 'react-native-paper';
 
 export const CommonTextInput = ({ label, onChangeText, ...rest }) => (
     <TextInput

@@ -1,5 +1,5 @@
 import React from "react";
-import { View, StyleSheet, SafeAreaView } from 'react-native';
+import { View, StyleSheet } from 'react-native';
 import { Text, IconButton } from 'react-native-paper';
 
 
