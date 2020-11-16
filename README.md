@@ -1,6 +1,3 @@
-
-```html
-
 <div align='center'>
 <h1 align="center"> Instructions</h1>
 <br><br><br>
@@ -26,7 +23,7 @@
     <h4 align="center">THIS WILL RUN THE APP LOCALLY</h4>
 <br><br><br>
 </div>
-```
+
 
  
 
