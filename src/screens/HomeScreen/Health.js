@@ -9,7 +9,7 @@ import NewsCard from '../../components/NewsCard';
 
 
 
-function LifeStyle(props) {
+function Health(props) {
 
     React.useEffect(() => {
         props.loadLifeStyleNews();
@@ -56,4 +56,4 @@ function mapStateToProps(state) {
 const mapDispatchToProps = {
     loadLifeStyleNews
 }
-export default connect(mapStateToProps, mapDispatchToProps)(LifeStyle);
+export default connect(mapStateToProps, mapDispatchToProps)(Health);

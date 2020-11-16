@@ -5,9 +5,9 @@ import PoliticsWorld from '../screens/HomeScreen/PoliticsWorld';
 import Entertainment from '../screens/HomeScreen/Entertainment';
 import Sports from '../screens/HomeScreen/Sports';
 import Finance from '../screens/HomeScreen/Finance';
-import Trending from '../screens/HomeScreen/Trending';
+import Sciencs from '../screens/HomeScreen/Sciencs';
 
-import LifeStyle from '../screens/HomeScreen/LifeStyle';
+import Health from '../screens/HomeScreen/Health';
 import Technology from '../screens/HomeScreen/Technology';
 
 
@@ -19,7 +19,7 @@ const Tab = createMaterialTopTabNavigator();
 function HomePageTopNavigation() {
     return (
         <Tab.Navigator
-            initialRouteName='TopHeadlines'
+            initialRouteName='Technology'
             tabBarOptions={{
                 labelStyle: { fontSize: 12 },
                 style: { backgroundColor: 'powderblue' },
@@ -31,17 +31,16 @@ function HomePageTopNavigation() {
         // swipeEnabled={false}
 
         >
-            <Tab.Screen name="Top Headlines" component={TopHeadlines} />
+            <Tab.Screen name="Technology" component={Technology} />
             <Tab.Screen name="Politics" component={PoliticsWorld} />
 
             <Tab.Screen name="Entertainment" component={Entertainment} />
             <Tab.Screen name="Sports" component={Sports} />
 
             <Tab.Screen name="Finance" component={Finance} />
-            <Tab.Screen name="Trending" component={Trending} />
+            <Tab.Screen name="Sciencs" component={Sciencs} />
 
-            <Tab.Screen name="LifeStyle" component={LifeStyle} />
-            <Tab.Screen name="Technology" component={Technology} />
+            <Tab.Screen name="Health" component={Health} />
         </Tab.Navigator>
     );
 }

@@ -16,9 +16,9 @@ function MenuItems({ props }) {
 
             />
             <DrawerItems
-                label='Top Headlines'
+                label='Technology'
                 labelStyle={drawerContentStyle.labelStyle}
-                onPress={() => props.navigate('Top Headlines')}
+                onPress={() => props.navigate('Technology')}
                 icon={() => { return <AvatarIcons size={30} name='cart-outline' style={drawerContentStyle.avatarStyle} /> }}
                 style={drawerContentStyle.drawerItems}
             />
@@ -51,23 +51,16 @@ function MenuItems({ props }) {
                 style={drawerContentStyle.drawerItems}
             />
             <DrawerItems
-                label='Trending'
+                label='Sciencs'
                 labelStyle={drawerContentStyle.labelStyle}
-                onPress={() => props.navigate('Trending')}
+                onPress={() => props.navigate('Sciencs')}
                 icon={() => { return <AvatarIcons size={30} name='cart-outline' style={drawerContentStyle.avatarStyle} /> }}
                 style={drawerContentStyle.drawerItems}
             />
             <DrawerItems
-                label='LifeStyle'
+                label='Health'
                 labelStyle={drawerContentStyle.labelStyle}
-                onPress={() => props.navigate('LifeStyle')}
-                icon={() => { return <AvatarIcons size={30} name='cart-outline' style={drawerContentStyle.avatarStyle} /> }}
-                style={drawerContentStyle.drawerItems}
-            />
-            <DrawerItems
-                label='Technology'
-                labelStyle={drawerContentStyle.labelStyle}
-                onPress={() => props.navigate('Technology')}
+                onPress={() => props.navigate('Health')}
                 icon={() => { return <AvatarIcons size={30} name='cart-outline' style={drawerContentStyle.avatarStyle} /> }}
                 style={drawerContentStyle.drawerItems}
             />
