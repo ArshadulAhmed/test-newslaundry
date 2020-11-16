@@ -32,7 +32,7 @@ function HeaderComponent(props) {
                 <IconButton
                     size={22}
                     icon="magnify"
-                    onPress={() => props.navigation.navigate('Home')}
+                    onPress={() => props.navigation.navigate('NewsSearchScreen')}
                 />
             </View>
         </View>

@@ -11,6 +11,7 @@ import finance_india from '../reducers/loadFinanceNews';
 import technology_india from '../reducers/loadTechnologyNews';
 import lifestyle_india from '../reducers/loadLifeStyleNews';
 import science_india from '../reducers/loadScienceNews';
+import search_result from '../reducers/getNewsSearchResult';
 
 
 import messages from '../reducers/messages/messages';
@@ -25,6 +26,7 @@ export default combineReducers({
   technology_india,
   lifestyle_india,
   science_india,
+  search_result,
   messages,
   errors,
 });

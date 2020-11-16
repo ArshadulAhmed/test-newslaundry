@@ -2,11 +2,12 @@ import React from "react";
 import { Animated } from 'react-native';
 import { createStackNavigator } from '@react-navigation/stack';
 import HeaderComponent from './header';
-// import HeaderComponent2 from './header2';
+import HeaderComponent2 from './header2';
 import HomeScreen from "../screens/HomeScreen/HomeScreen";
 import NewsDetails from '../screens/NewsDetails/NewsDetails';
 import UserProfile from '../screens/UserProfile/UserProfile';
 import NewsDetailScreen from '../screens/NewsDetailScreen/NewsDetailScreen';
+import NewsSearchScreen from '../screens/NewsSearchScreen/NewsSearchScreen';
 
 const forFade = ({ current, next }) => {
     const opacity = Animated.add(
@@ -57,6 +58,20 @@ function StackNavigatorCom(props) {
                 name='NewsDetailScreen'
                 component={NewsDetailScreen}
                 options={{ headerStyleInterpolator: false }}
+            />
+            <Stack.Screen
+                name="NewsSearchScreen"
+                component={NewsSearchScreen}
+                //options={{ headerStyleInterpolator: forFade }}
+                options={{
+                    headerStyleInterpolator: forFade,
+                    header: ({ scene, previous, navigation }) => {
+                        return (
+                            <HeaderComponent2 navigation={navigation} previous={previous} />
+                        );
+                    },
+
+                }}
             />
         </Stack.Navigator>
     );

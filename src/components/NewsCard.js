@@ -9,7 +9,7 @@ function NewsCard(props) {
             <Card.Title title={props.item.title} subtitle={props.item.author} titleStyle={styles.title} subtitleStyle={styles.subTitle} />
             <Card.Content>
                 <Paragraph style={styles.paragraph} >{props.item.description}</Paragraph>
-                <TouchableOpacity onPress={() => props.navi.navigate('NewsDetailScreen')}><Text style={styles.readMore}>Read More...</Text></TouchableOpacity>
+                <TouchableOpacity onPress={() => props.navi.navigate('NewsDetailScreen', { items: props.item })}><Text style={styles.readMore}>Read More...</Text></TouchableOpacity>
             </Card.Content>
         </Card>
     )
