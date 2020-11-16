@@ -6,6 +6,7 @@ import HeaderComponent from './header';
 import HomeScreen from "../screens/HomeScreen/HomeScreen";
 import NewsDetails from '../screens/NewsDetails/NewsDetails';
 import UserProfile from '../screens/UserProfile/UserProfile';
+import NewsDetailScreen from '../screens/NewsDetailScreen/NewsDetailScreen';
 
 const forFade = ({ current, next }) => {
     const opacity = Animated.add(
@@ -50,6 +51,11 @@ function StackNavigatorCom(props) {
             <Stack.Screen
                 name='UserProfile'
                 component={UserProfile}
+                options={{ headerStyleInterpolator: false }}
+            />
+            <Stack.Screen
+                name='NewsDetailScreen'
+                component={NewsDetailScreen}
                 options={{ headerStyleInterpolator: false }}
             />
         </Stack.Navigator>

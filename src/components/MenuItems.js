@@ -16,16 +16,16 @@ function MenuItems({ props }) {
 
             />
             <DrawerItems
-                label='Indian Politics'
+                label='Top Headlines'
                 labelStyle={drawerContentStyle.labelStyle}
-                onPress={() => props.navigate('Indian Politics')}
+                onPress={() => props.navigate('Top Headlines')}
                 icon={() => { return <AvatarIcons size={30} name='cart-outline' style={drawerContentStyle.avatarStyle} /> }}
                 style={drawerContentStyle.drawerItems}
             />
             <DrawerItems
-                label='World Politics'
+                label='Politics'
                 labelStyle={drawerContentStyle.labelStyle}
-                onPress={() => props.navigate('World Politics')}
+                onPress={() => props.navigate('Politics')}
                 icon={() => { return <AvatarIcons size={30} name='cart-outline' style={drawerContentStyle.avatarStyle} /> }}
                 style={drawerContentStyle.drawerItems}
             />

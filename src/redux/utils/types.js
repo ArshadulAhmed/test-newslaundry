@@ -1,4 +1,4 @@
-// load products
+// load top news
 export const LOAD_NEWS_IN_START = "LOAD_NEWS_IN_START";
 export const LOAD_NEWS_IN_SUCCESS = "LOAD_NEWS_IN_SUCCESS";
 export const LOAD_NEWS_IN_FAIL = "LOAD_NEWS_IN_FAIL";
@@ -6,3 +6,15 @@ export const LOAD_NEWS_IN_FAIL = "LOAD_NEWS_IN_FAIL";
 
 export const CREATE_MESSAGE = "CREATE_MESSAGE";
 export const GET_ERRORS = "GET_ERRORS";
+
+// load politics news
+
+
+export const LOAD_POLITICS_IN_START = "LOAD_POLITICS_IN_START";
+export const LOAD_POLITICS_IN_SUCCESS = "LOAD_POLITICS_IN_SUCCESS";
+export const LOAD_POLITICS_IN_FAIL = "LOAD_POLITICS_IN_FAIL";
+
+
+export const LOAD_ENT_IN_START = "LOAD_ENT_IN_START";
+export const LOAD_ENT_IN_SUCCESS = "LOAD_ENT_IN_SUCCESS";
+export const LOAD_ENT_IN_FAIL = "LOAD_ENT_IN_FAIL";

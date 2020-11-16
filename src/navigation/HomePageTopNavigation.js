@@ -1,6 +1,6 @@
 import React from 'react';
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
-import PoliticsIndia from '../screens/HomeScreen/PoliticsIndia';
+import TopHeadlines from '../screens/HomeScreen/TopHeadlines';
 import PoliticsWorld from '../screens/HomeScreen/PoliticsWorld';
 import Entertainment from '../screens/HomeScreen/Entertainment';
 import Sports from '../screens/HomeScreen/Sports';
@@ -19,7 +19,7 @@ const Tab = createMaterialTopTabNavigator();
 function HomePageTopNavigation() {
     return (
         <Tab.Navigator
-            initialRouteName='PoliticsIndia'
+            initialRouteName='TopHeadlines'
             tabBarOptions={{
                 labelStyle: { fontSize: 12 },
                 style: { backgroundColor: 'powderblue' },
@@ -31,8 +31,8 @@ function HomePageTopNavigation() {
         // swipeEnabled={false}
 
         >
-            <Tab.Screen name="Indian Politics" component={PoliticsIndia} />
-            <Tab.Screen name="World Politics" component={PoliticsWorld} />
+            <Tab.Screen name="Top Headlines" component={TopHeadlines} />
+            <Tab.Screen name="Politics" component={PoliticsWorld} />
 
             <Tab.Screen name="Entertainment" component={Entertainment} />
             <Tab.Screen name="Sports" component={Sports} />

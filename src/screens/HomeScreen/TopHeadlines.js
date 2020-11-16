@@ -2,19 +2,19 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { Text } from 'react-native-paper';
 import { SafeAreaView, FlatList, View } from 'react-native';
-import { loadEntertainmentNews } from '../../redux/actions/loadEntairtaimentNews'
+import { loadIndianTopNews } from '../../redux/actions/loadIndianTopNews'
 import NewsCard from '../../components/NewsCard';
 
 
 
 
 
-function Entertainment(props) {
+function TopHeadlines(props) {
 
     React.useEffect(() => {
-        props.loadEntertainmentNews();
+        props.loadIndianTopNews();
     }, [])
-    const { isLoading, articles } = props.entertainment_india_info;
+    const { isLoading, articles } = props.politics_india_info;
     if (isLoading) {
         return (
             <Text>Loading...</Text>
@@ -49,11 +49,11 @@ function Entertainment(props) {
 }
 function mapStateToProps(state) {
     return {
-        entertainment_india_info: state.entertainment_india
+        politics_india_info: state.topnews_india
     }
 }
 
 const mapDispatchToProps = {
-    loadEntertainmentNews
+    loadIndianTopNews
 }
-export default connect(mapStateToProps, mapDispatchToProps)(Entertainment);
+export default connect(mapStateToProps, mapDispatchToProps)(TopHeadlines);
