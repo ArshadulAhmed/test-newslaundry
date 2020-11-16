@@ -7,11 +7,11 @@
 <div align='center'>   
   
 ***[Download Expo Client app from Google PlayStore](https://play.google.com/store/apps/details?id=host.exp.exponent)*** <br>
-***To run the project on your device (without generating the apk file) scan the QR code by using EXPO CLient app. [get the QR Code here](https://play.google.com/store/apps/details?id=host.exp.exponent)*** <br>
+***To run the project on your device (without generating the apk file) scan the QR code by using EXPO CLient app. [get the QR Code here](https://expo.io/@iamarshad/projects/newslaundry)*** <br>
 
   </div>
   
-  ### For data I have used [https://newsapi.org/](https://newsapi.org/) , which is free till 100 api request/24hr. If you receive any error regarding the same, please clone the project and follow the bellow instructions to run the project locally.
+  ### For data, I have used free version of [https://newsapi.org/](https://newsapi.org/) , which is having api request limit of 100/24hr. If you receive any error regarding the same, please clone the project and follow the bellow instructions to run the project locally.
   
 <div align='center'>
 <h4 align="center">Install node.js (v12.18.0)</h4>
