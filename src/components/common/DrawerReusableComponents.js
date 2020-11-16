@@ -31,7 +31,7 @@ DrawerItems.propTypes = {
 
 export const AvatarIcons = ({ name, size, style, ...rest }) => {
     return (
-        <Avatar.Icon size={size} icon={name} style={style} />
+        <Avatar.Icon size={size} icon={name} style={style} color='red' />
     )
 };
 AvatarIcons.propTypes = {

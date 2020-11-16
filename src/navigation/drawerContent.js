@@ -25,7 +25,7 @@ function DrawerContent({ navigation, ...props }) {
                 style={[
                     drawerContentStyle.drawerContent,
                     {
-                        backgroundColor: 'pink',
+                        backgroundColor: '#ccc',
                         transform: [{ translateX }],
                     },
                 ]}
@@ -60,13 +60,15 @@ function DrawerContent({ navigation, ...props }) {
                         </View>
                     </View>
 
-                    {
-                        showProfile ?
+                    <View style={{ ...drawerContentStyle.drawerInner }}>
+                        {
+                            showProfile ?
 
-                            <ProfileSettingItems props={navigation} /> :
-                            <MenuItems props={navigation} />
+                                <ProfileSettingItems props={navigation} /> :
+                                <MenuItems props={navigation} />
 
-                    }
+                        }
+                    </View>
                     <Footer />
 
                 </View>

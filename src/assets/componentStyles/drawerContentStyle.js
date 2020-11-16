@@ -4,6 +4,8 @@ import { StyleSheet } from 'react-native';
 const drawerContentStyle = StyleSheet.create({
 
     drawerContent: {
+        flex: 1,
+        //minHeight: '100%'
     },
     drawerTopSection: {
         flex: 1,
@@ -11,7 +13,7 @@ const drawerContentStyle = StyleSheet.create({
     },
     drawerMenuContent: {
         flex: 1,
-        backgroundColor: '#ccc'
+        backgroundColor: '#ccc',
     },
 
     goBackButton: {
@@ -23,7 +25,8 @@ const drawerContentStyle = StyleSheet.create({
         backgroundColor: 'red',
         paddingTop: 10,
         paddingLeft: 10,
-        alignContent: 'center'
+        alignContent: 'center',
+
 
     },
     innerBottom: {
@@ -36,7 +39,9 @@ const drawerContentStyle = StyleSheet.create({
         backgroundColor: 'transparent'
     },
     labelStyle: {
-        fontFamily: 'montserrat-regular'
+        fontFamily: 'montserrat-semiBold',
+        color: 'red',
+        letterSpacing: 0.5
     },
     userNameOnDrawer: {
         fontFamily: 'montserrat-regular',
@@ -50,8 +55,10 @@ const drawerContentStyle = StyleSheet.create({
     },
     avatarStyleTop: {
         backgroundColor: 'pink',
+    },
+    drawerInner: {
 
-
+        flex: 1,
     }
 
 
